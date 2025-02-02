@@ -15,30 +15,32 @@ export default function Page() {
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <section id="hero">
-        <div className="mx-auto w-full max-w-2xl space-y-8">
-          <div className="gap-2 flex justify-between">
-            <div className="flex-col flex flex-1 space-y-1.5">
-              <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              />
-              <BlurFadeText
-                className="max-w-[600px] md:text-xl"
-                delay={BLUR_FADE_DELAY}
-                text={DATA.description}
-              />
-            </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
-            </BlurFade>
-          </div>
-        </div>
-      </section>
+  <div className="mx-auto w-full max-w-2xl space-y-8">
+    {/* Adjusted to vertically align the avatar and name */}
+    <div className="gap-2 flex justify-center flex-col items-center">
+      <BlurFade delay={BLUR_FADE_DELAY}>
+        <Avatar className="size-48 border mx-auto">
+          <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+          <AvatarFallback>{DATA.initials}</AvatarFallback>
+        </Avatar>
+      </BlurFade>
+      <div className="flex-col flex text-center mt-4">
+        <BlurFadeText
+          delay={BLUR_FADE_DELAY}
+          className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+          yOffset={8}
+          text={`Hi, I'm ${DATA.name.split(" ")[0]} `}
+        />
+        <BlurFadeText
+          className="max-w-[600px] md:text-xl"
+          delay={BLUR_FADE_DELAY}
+          text={DATA.description}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
           <h2 className="text-xl font-bold">About</h2>
@@ -104,8 +106,9 @@ export default function Page() {
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
+              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 20 + id * 0.05}>
+                <Badge key={skill} style={{ fontSize: '15px' }}>{skill}</Badge>
+
               </BlurFade>
             ))}
           </div>
@@ -120,11 +123,10 @@ export default function Page() {
                   My Projects
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Check out my latest work
+                  Check out my projects here
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
+                  I&apos;ve worked on a variety of projects,  Here are a few of my
                   favorites.
                 </p>
               </div>
@@ -158,18 +160,14 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                  Symposium
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                I enjoy participating in college events
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  During my time in university, I Participated{" "}
+                  in various College National level and State level Technical Symposium and won more than 15 Certificates.
                 </p>
               </div>
             </div>
@@ -213,8 +211,7 @@ export default function Page() {
                 >
                   with a direct question on twitter
                 </Link>{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                and I&apos;ll respond whenever I can. 
               </p>
             </div>
           </BlurFade>

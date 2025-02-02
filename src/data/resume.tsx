@@ -22,6 +22,7 @@ export const DATA = {
     "My SQL",
     "MS Access",
   ],
+  
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
