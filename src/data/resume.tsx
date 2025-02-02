@@ -146,12 +146,12 @@ export const DATA = {
       links: [
         {
           //type: "Website",
-          href: "",
+          //href: "",
           //icon: <Icons.globe className="size-3" />,
         },
         {
           //type: "Source",
-          href: "",
+          //href: "",
           //icon: <Icons.github className="size-3" />,
         },
       ],
