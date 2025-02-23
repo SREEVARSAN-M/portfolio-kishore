@@ -21,6 +21,7 @@ export const DATA = {
     ".Net",
     "My SQL",
     "MS Access",
+    "Adobe Photoshop"
   ],
   
   navbar: [
