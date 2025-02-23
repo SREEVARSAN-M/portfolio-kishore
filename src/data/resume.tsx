@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "",
   summary:
-    "Detail-oriented and results-driven Data Analyst with 2 years of experience in collecting, processing and analyzing data to drive business insights and support decision-making. Proficient in SQL, Excel, and data visualization tools like Power BI. Adept at cleaning and transforming complex datasets, identifying trends, and creating clear, actionable reports for stakeholders. Proven ability to collaborate with cross-functional teams to deliver data-driven strategies that optimize business processes and performance.",
+    "A passionate Data Analyst with 2 years of experience in collecting, processing and analyzing data to drive business insights and support decision-making. Proficient in SQL, Excel, and data visualization tools like Power BI. Adept at cleaning and transforming complex datasets, identifying trends, and creating clear, actionable reports for stakeholders. Proven ability to collaborate with cross-functional teams to deliver data-driven strategies that optimize business processes and performance.",
   avatarUrl: "/me.jpg",
   skills: [
     "Microsoft Office",
@@ -22,6 +22,8 @@ export const DATA = {
     "My SQL",
     "MS Access",
     "Adobe Photoshop"
+    "Adobe Premiere Pro",
+    "Power BI",
   ],
   
   navbar: [
@@ -87,7 +89,7 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Nehru Memorial College",
+      College: "Nehru Memorial College",
       href: "https://Kishorem.me",
       degree: "Bachelor of Computer Applications",
       logoUrl: "/buildspace.jpg",
@@ -95,7 +97,7 @@ export const DATA = {
       end: "June 2021",
     },
     {
-      school: "Master of Computer Applications",
+      College: "Bishop Heber College",
       href: "https://bhc.edu.in/bhc/index.php",
       degree: "Master of Computer Applications",
       logoUrl: "/buildspace.jpg",
